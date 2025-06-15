@@ -50,14 +50,19 @@
                 (setq total (+ (* A 100) B inc))
                 (setq newA (fix (/ total 100)))
                 (setq newB (rem total 100))
-                ;; Format A and B
+                ;; Format A to maintain original digit count without unnecessary leading zeros
                 (setq newA_str (itoa newA))
+                (setq origA_len (strlen A_str))
+                (while (< (strlen newA_str) origA_len)
+                  (setq newA_str (strcat "0" newA_str)))
+                ;; Ensure no unnecessary leading zeros for A
+                (while (and (> (strlen newA_str) 1)
+                           (= (substr newA_str 1 1) "0"))
+                  (setq newA_str (substr newA_str 2)))
+                ;; Format B to always have 2 digits
                 (setq newB_str (itoa newB))
-                ;; Ensure A has leading zeros if >= 3 digits
-                (if (> (strlen newA_str) 2)
-                  (while (< (strlen newA_str) 3)
-                    (setq newA_str (strcat "0" newA_str)))
-                )
+                (while (< (strlen newB_str) 2)
+                  (setq newB_str (strcat "0" newB_str)))
                 ;; Build result string
                 (setq resultStr (strcat "STA: " newA_str "+" newB_str))
                 ;; Rebuild full text
