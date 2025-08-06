@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Shared Code Files</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom styles for the Inter font and overall look */
@@ -37,7 +36,6 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="container bg-white shadow-lg rounded-2xl p-8 md:p-12 space-y-8">
-        <!-- Header Section -->
         <header class="text-center mb-8">
             <h1 class="text-4xl font-extrabold text-gray-800 mb-4">
                 <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
@@ -49,11 +47,10 @@
             </p>
         </header>
 
-        <!-- Files List Section -->
         <section class="space-y-6">
             <h2 class="text-2xl font-semibold text-gray-700 border-b-2 pb-3 mb-6">Available Downloads</h2>
 
-            <!-- File Item 1 -->
+            <!-- Project Alpha - Blue -->
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between bg-blue-50 p-6 rounded-xl shadow-sm border border-blue-200">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="text-xl font-medium text-blue-800">
@@ -71,7 +68,7 @@
                 </a>
             </div>
 
-            <!-- File Item 2 -->
+            <!-- Data Processing Script - Green -->
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between bg-green-50 p-6 rounded-xl shadow-sm border border-green-200">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="text-xl font-medium text-green-800">
@@ -89,7 +86,7 @@
                 </a>
             </div>
 
-            <!-- File Item 3 -->
+            <!-- Frontend Styles - Purple -->
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between bg-purple-50 p-6 rounded-xl shadow-sm border border-purple-200">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="text-xl font-medium text-purple-800">
@@ -107,7 +104,7 @@
                 </a>
             </div>
 
-            <!-- File Item 4 -->
+            <!-- Database Schema - Orange -->
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between bg-orange-50 p-6 rounded-xl shadow-sm border border-orange-200">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="text-xl font-medium text-orange-800">
@@ -125,7 +122,7 @@
                 </a>
             </div>
 
-            <!-- New File Item 5 (CLEAN.lsp) -->
+            <!-- CLEAN.lsp - Red -->
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between bg-red-50 p-6 rounded-xl shadow-sm border border-red-200">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="text-xl font-medium text-red-800">
@@ -143,7 +140,7 @@
                 </a>
             </div>
 
-            <!-- New File Item 6 (STA_UPDATE_TOOL.LSP) -->
+            <!-- STA_UPDATE_TOOL.LSP - Yellow -->
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between bg-yellow-50 p-6 rounded-xl shadow-sm border border-yellow-200">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="text-xl font-medium text-yellow-800">
@@ -160,9 +157,44 @@
                     Download
                 </a>
             </div>
+            
+            <!-- LenBlock.lsp - Teal -->
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between bg-teal-50 p-6 rounded-xl shadow-sm border border-teal-200">
+                <div class="flex-1 mb-4 md:mb-0">
+                    <h3 class="text-xl font-medium text-teal-800">
+                        <svg class="inline-block w-6 h-6 mr-2 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M12 20.354a4 4 0 010-5.292M12 14v7m-4-3.5h8M12 2.5v7m-4 3.5h8"></path>
+                        </svg>
+                        LenBlock.lsp
+                    </h3>
+                    <p class="text-gray-600 ml-8 text-sm md:text-base">
+                        LISP tool for getting the length of a selected object.
+                    </p>
+                </div>
+                <a href="LenBlock.lsp" download class="download-button bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-full shadow-md">
+                    Download
+                </a>
+            </div>
+
+            <!-- ChangeBlockTextColor.lsp - Pink -->
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between bg-pink-50 p-6 rounded-xl shadow-sm border border-pink-200">
+                <div class="flex-1 mb-4 md:mb-0">
+                    <h3 class="text-xl font-medium text-pink-800">
+                        <svg class="inline-block w-6 h-6 mr-2 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M12 20.354a4 4 0 010-5.292M12 14v7m-4-3.5h8M12 2.5v7m-4 3.5h8"></path>
+                        </svg>
+                        ChangeBlockTextColor.lsp
+                    </h3>
+                    <p class="text-gray-600 ml-8 text-sm md:text-base">
+                        LISP tool for changing the text color within a block.
+                    </p>
+                </div>
+                <a href="ChangeBlockTextColor.lsp" download class="download-button bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full shadow-md">
+                    Download
+                </a>
+            </div>
         </section>
 
-        <!-- Footer Section -->
         <footer class="text-center mt-12 text-gray-500 text-sm">
             <p>&copy; 2025 My Code Share. All rights reserved.</p>
         </footer>
